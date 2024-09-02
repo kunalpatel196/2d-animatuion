@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+           
+        }
+        body{
+            background-color: #000;
+        }
+
+        .walk {
+            width: 110px;
+            height: 300px;
+            background-image: url(img/walk2-removebg-preview.png);
+            background-repeat: no-repeat;
+            animation: wal 1s steps(8) infinite;
+            background-size: 900px;
+            display: flex;
+        }
+
+        @keyframes wal {
+            to {
+               background-position: -900px;
+            }
+
+            from {
+                background-position: 0px;
+            }
+        }
+        .ground{
+            background-color: greenyellow;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="walk"></div>  <div class="walk"></div>  <div class="walk"></div> 
+        <div class="ground"></div>
+    </div>
+</body>
+
+</html>
